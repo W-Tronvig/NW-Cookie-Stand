@@ -1,33 +1,47 @@
-header, section, footer, nav, aside {border: 1px dotted red;}
+/* header, section, footer, nav, aside {border: 1px dotted red;} */
+html { 
+    background: url(OtherWoodenBackground.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 h1 {
     min-width: 600px;
     text-align: center; 
+    font-size: 5em;
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 7px;
 }
 h2 {
     text-align: center;
+    letter-spacing: 10px;
+    margin-top: 0;
 }
 
 main {
     display: flex;
-    flex-wrap: wrap;
 }
-
 
 nav, section, aside {
     vertical-align: top;
-
 }
 
 nav, aside {
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 150px;
-    flex: 1 0 150px;
+    flex-basis: 320;
+    flex: 1 0 320px;
 }
 
 section {
     min-width: 420px;
 }
 
-
+footer {
+    text-align: center;
+}
+ul {
+    list-style: none; 
+}
