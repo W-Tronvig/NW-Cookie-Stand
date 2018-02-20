@@ -62,24 +62,33 @@ section {
     padding: 5px;
     line-height: 1.4;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 30px;
 }
 
 footer {
     text-align: center;
     color: rgb(255, 255, 255);
     font-weight: 1000;
-    margin: 20px; 
+    margin: 110px; 
 }
 div {
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.543);
+    /* background-color: rgba(0, 0, 0, 0.543); */
     padding: 3px;
 }
 ul li {
     display: inline;
     list-style: none;
     font-size:  20px;
-    padding-right: 50px; 
+    margin-right: 80px; 
+    padding: 10px;
+}
+
+li {
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 5px;
+    margin: 30px;
+    
 }
 
 
