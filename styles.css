@@ -34,6 +34,10 @@ h3 {
     font-size: 40px;
 
 }
+h4 {
+    text-align: center; 
+    font-size: 24px;
+}
 
 main {
     display: flex;
@@ -73,22 +77,29 @@ footer {
 }
 div {
     text-align: center;
-    /* background-color: rgba(0, 0, 0, 0.543); */
     padding: 3px;
-}
+} 
+
 ul li {
     display: inline;
     list-style: none;
     font-size:  20px;
     margin-right: 80px; 
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.659);
+    
 }
 
 li {
-    background-color: rgba(0, 0, 0, 0.534);
     border-radius: 5px;
     margin: 30px;
-    
+    font-size: 14px;
+}
+
+ol {
+    /* columns: 1; */
+    align-content: center;
+    padding: 0;
 }
 
 
