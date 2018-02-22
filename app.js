@@ -30,8 +30,6 @@ let pdxPearlDistrict = new Store(3, 24, 2.6, 'Pearl District');
 //re-watch videos and see how to make table / form. with button 
 
 
-
-
 // function Store(minimumCustomers, maximumCustomers, avgCookiesSale) {
 //     this.minimumCustomers = minimumCustomers;
 //     this.maximumCustomers = maximumCustomers;
