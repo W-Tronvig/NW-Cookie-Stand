@@ -11,7 +11,6 @@ html {
 h1 {
     min-width: 600px;
     text-align: center; 
-    font-size: 5em;
     font-family: 'Aclonica', sans-serif;
     letter-spacing: 10px;
     color: white;
@@ -35,8 +34,8 @@ h3 {
 
 }
 h4 {
-    text-align: center; 
-    font-size: 24px;
+   text-align: center;
+    font-size: 40px;
 }
 
 main {
@@ -101,5 +100,24 @@ ol {
     align-content: center;
     padding: 0;
 }
+h5 {
+    color: white;
+    font-size: 20px;
+}
 
-
+tbody {
+    border: 1px solid red;
+    color: white;
+}
+table
+{
+    border: dotted 1px red;
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    border: dotted 1px rgb(0, 26, 255);
+}
+th {
+    border: dotted 1px rgb(0, 255, 13);
+}

@@ -27,7 +27,9 @@ let pdxWashingtonSquare = new Store(11, 38, 1.9, 'Washington Square');
 let pdxSellWood = new Store(20, 48, 3.3, 'SellWood');
 let pdxPearlDistrict = new Store(3, 24, 2.6, 'Pearl District');
 
-//re-watch videos and see how to make table / form. with button 
+// re-watch videos and see how to make table and form with button 
+
+
 
 
 // function Store(minimumCustomers, maximumCustomers, avgCookiesSale) {
