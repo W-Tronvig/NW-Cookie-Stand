@@ -15,6 +15,7 @@ h1 {
     letter-spacing: 10px;
     color: white;
     font-weight: 1000;
+    font-size: 100px;
 }
 h2 {
     text-align: center;
@@ -37,7 +38,10 @@ h4 {
    text-align: center;
     font-size: 40px;
 }
-
+h5 {
+    color: white;
+    font-size: 20px;
+}
 main {
     display: flex;
 }
@@ -100,10 +104,7 @@ ol {
     align-content: center;
     padding: 0;
 }
-h5 {
-    color: white;
-    font-size: 20px;
-}
+
 
 tbody {
     border: 1px solid red;
