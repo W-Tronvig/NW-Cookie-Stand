@@ -5,7 +5,6 @@ function formatId (name){
     return 'pdx' + result;
 }
 
-
 //Contructor function
 
 function Store(minimumCustomers, maximumCustomers, avgCookiesSale, storeName) {
@@ -25,7 +24,7 @@ function Store(minimumCustomers, maximumCustomers, avgCookiesSale, storeName) {
     };
 
     this.createTd = function () {
-        // 
+
         const list = document.getElementById(formatId(this.storeName));
 
         for (let i = 0; i < this.cookiesArray.length; i++) {
@@ -47,6 +46,7 @@ function Store(minimumCustomers, maximumCustomers, avgCookiesSale, storeName) {
         return total;
     };
 };
+
 // Instance creator
 
 const pdxPioneerSquare = new Store(17, 88, 5.2, 'Pioneer Square');
@@ -54,9 +54,6 @@ const pdxAirport = new Store(6, 24, 1.2, 'Airport');
 const pdxWashingtonSquare = new Store(11, 38, 1.9, 'Washington Square');
 const pdxSellWood = new Store(20, 48, 3.3, 'SellWood');
 const pdxPearlDistrict = new Store(3, 24, 2.6, 'Pearl District');
-
-// Creating Element 
-
 
 pdxWashingtonSquare.randomCustomersHour();
 pdxWashingtonSquare.createTd();

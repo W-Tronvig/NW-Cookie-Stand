@@ -67,7 +67,7 @@ section {
     border-radius: 25px;    
     font-size: 18px;
     padding: 5px;
-    line-height: 1.4;
+    line-height: 1.2;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 30px;
 }
@@ -96,7 +96,7 @@ ul li {
 li {
     border-radius: 5px;
     margin: 30px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 ol {
@@ -107,18 +107,18 @@ ol {
 
 
 tbody {
-    border: 1px solid red;
+    font-size: 20px;
     color: white;
 }
 table
 {
-    border: dotted 1px red;
+    border: solid 2px gray;
     margin-left: auto;
     margin-right: auto;
 }
 td {
-    border: dotted 1px rgb(0, 26, 255);
+    border: solid 2px gray;
 }
 th {
-    border: dotted 1px rgb(0, 255, 13);
+    border: solid 2px gray;
 }
