@@ -29,7 +29,7 @@ function Store(minimumCustomers, maximumCustomers, avgCookiesSale, storeName) {
 
         for (let i = 0; i < this.cookiesArray.length; i++) {
             const td = document.createElement('td');
-            td.textContent = timeOfDayArray[i] + ': ' + this.cookiesArray[i];
+            td.textContent = this.cookiesArray[i];
             list.appendChild(td);
         }
 
