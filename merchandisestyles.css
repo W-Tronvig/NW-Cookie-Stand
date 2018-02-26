@@ -1,0 +1,13 @@
+
+html { 
+background: url(images/shark.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;  /*background border image code from css.tricks */
+
+};
+img {
+    border-radius: 200px;
+    padding: 40px;
+};

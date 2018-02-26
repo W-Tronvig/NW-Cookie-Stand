@@ -1,7 +1,9 @@
+'use strict';
+
 const timeOfDayArray = ['10AM', '11AM', '12PM','1PM', '2PM', '3PM', '4PM', '5PM', '6PM'];
 
 function formatId (name){
-    const result = name.replace(" ", "");
+    const result = name.replace(' ', '');
     return 'pdx' + result;
 }
 
@@ -23,19 +25,30 @@ function Store(minimumCustomers, maximumCustomers, avgCookiesSale, storeName) {
         }
     };
 
-    this.createTd = function () {
+    this.populateRow = function () {
 
-        const list = document.getElementById(formatId(this.storeName));
+        let row = document.getElementById(formatId(this.storeName));
+        
+        if (!row) {
+            row = document.createElement('tr');
+
+            const th = document.createElement('th');
+            th.textContent = this.storeName;
+            row.appendChild(th);
+
+            document.querySelector('tbody').appendChild(row);
+            
+        }
 
         for (let i = 0; i < this.cookiesArray.length; i++) {
             const td = document.createElement('td');
             td.textContent = this.cookiesArray[i];
-            list.appendChild(td);
+            row.appendChild(td);
         }
 
         const total = document.createElement('td');
         total.textContent = this.calcTotal();
-        list.appendChild(total);
+        row.appendChild(total);
     };
 
     this.calcTotal = function () {
@@ -56,12 +69,43 @@ const pdxSellWood = new Store(20, 48, 3.3, 'SellWood');
 const pdxPearlDistrict = new Store(3, 24, 2.6, 'Pearl District');
 
 pdxWashingtonSquare.randomCustomersHour();
-pdxWashingtonSquare.createTd();
+pdxWashingtonSquare.populateRow();
 pdxSellWood.randomCustomersHour();
-pdxSellWood.createTd();
+pdxSellWood.populateRow();
 pdxPearlDistrict.randomCustomersHour();
-pdxPearlDistrict.createTd();
+pdxPearlDistrict.populateRow();
 pdxAirport.randomCustomersHour();
-pdxAirport.createTd();
+pdxAirport.populateRow();
 pdxPioneerSquare.randomCustomersHour();
-pdxPioneerSquare.createTd();
+pdxPioneerSquare.populateRow();
+
+// x adding submit event listener to form
+// - get data from form and put on dom as new store
+// - get data from form
+// - get data on table
+
+// eslint-disable-next-line
+function addStore(inputField) {
+    const nameOfStore = inputField.form.elements.nameOfStore.value;
+    const miniCust = inputField.form.elements.miniCust.value;
+    const maxiCust = inputField.form.elements.maxiCust.value;
+    const avgCook = inputField.form.elements.avgCook.value;
+
+    const newStore = new Store(miniCust, maxiCust, avgCook, nameOfStore);
+    newStore.randomCustomersHour();
+    newStore.populateRow();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

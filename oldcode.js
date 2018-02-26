@@ -198,3 +198,7 @@
 // pdxAirport.createTd();
 // pdxPioneerSquare.randomCustomersHour();
 // pdxPioneerSquare.createTd();
+
+
+
+// onclick="addStore()"

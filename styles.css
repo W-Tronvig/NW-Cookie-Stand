@@ -113,10 +113,32 @@ table
     border: solid 2px gray;
     margin-left: auto;
     margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.694);
 }
 td {
     border: solid 2px gray;
 }
 th {
     border: solid 2px gray;
+}
+form {
+    color: white;
+    width: 400px;   
+    margin: 0 auto;
+    background-color: black;
+}
+label {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    width: 100%;
+}
+
+label input {
+    width: 100px;
+    position: absolute;
+    right: 0;
+}
+.required {
+    background-color: rgb(220, 128, 128);
 }

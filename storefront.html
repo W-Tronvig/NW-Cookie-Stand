@@ -64,18 +64,18 @@
                     </p>
                     <h3 id="location">Our Location and Contact</h3>
                         <ol>
-                            <li>PIONEER SQUARE</li>
-                            <li>PORTLAND AIRPORT</li>
-                            <li>WASHINGTON SQUARE</li>
-                            <li>SELLWOOD</li>
-                            <li>PEARL DISTRICT</li>
-                            <li>SEATTLE</li>
-                            <li>TACOMA</li>
-                            <li>OLYMPIA</li>
-                            <li>CANNON BEACH</li>
-                            <li>SAN FRANCISCO</li>
-                            <li>SACREMENTO</li>
-                            <li>LAS ANGELES</li>
+                            <li>PIONEER SQUARE: 701 SW 6th Ave, Portland, OR 97205</li>
+                            <li>PORTLAND AIRPORT: 7000 NE Airport Way, Portland, OR 97218</li>
+                            <li>WASHINGTON SQUARE: 9585 SW Washington Square Rd, Portland, OR 97223</li>
+                            <li>SELLWOOD: 34512 SE 7th Ave, Portland, OR 97202</li>
+                            <li>PEARL DISTRICT: 903 NW Everett St, Portland, OR 97209</li>
+                            <li>SEATTLE: 701 5th Ave, Seattle, WA 98104</li>
+                            <li>TACOMA: 3001 Ruston Way, Tacoma, WA 98402</li>
+                            <li>OLYMPIA: 5345 Plum St. Olympia, WA 98501</li>
+                            <li>CANNON BEACH: 1400 S Hemlock St, Cannon Beach, OR 97110</li>
+                            <li>SAN FRANCISCO: 750 Stanyan St, San Francisco, CA 94117</li>
+                            <li>SACREMENTO: 25 Howe Ave, Sacramento, CA 95826</li>
+                            <li>LAS ANGELES: 319 Divisadero St, San Francisco, CA 94117</li>
                         </ol>
                     <p>
                         All of our locations were specially picked as to incorporate the culture of the surrounding area as well as provide easy access to our customers. Each spot has a unique history behind it that we encourage you to check out when you come into the shop. We won't go into details here in order to leave it suspenseful for you! Looking forward to seeing you soon :)! 
@@ -124,13 +124,20 @@
             </table>    
             <br>
             <form>
-              <label>First Name: <input type="text" name="first"></label>  
+                <fieldset>
+                    <legend>New Store Information</legend>
+                    <label>Store Name: <input type="text" name="nameOfStore" required></label> 
+                    <label>Minimum Customers Expected: <input type="number" name="miniCust" required></label>  
+                    <label>Maximum Customers Expected: <input type="number" name="maxiCust" required></label>  
+                    <label>Average Cookie Sales: <input type="number" name="avgCook" required> </label> 
+                    <input type="button" name="submit" value="Build New Store!" onclick="addStore(this)">
+                </fieldset>
             </form>
         </div>
         <div>
             <ul>
-                <li><a href="#merchandise">Merchandise</a></li> 
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="merchandise.html">Merchandise</a></li> 
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="#history">History</a></li> 
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#location">Location and Contact</a></li>
