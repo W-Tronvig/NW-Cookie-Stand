@@ -28,7 +28,7 @@ function Store(minimumCustomers, maximumCustomers, avgCookiesSale, storeName) {
     this.populateRow = function () {
 
         let row = document.getElementById(formatId(this.storeName));
-        
+
         if (!row) {
             row = document.createElement('tr');
 
@@ -37,7 +37,7 @@ function Store(minimumCustomers, maximumCustomers, avgCookiesSale, storeName) {
             row.appendChild(th);
 
             document.querySelector('tbody').appendChild(row);
-            
+
         }
 
         for (let i = 0; i < this.cookiesArray.length; i++) {
@@ -94,6 +94,7 @@ function addStore(inputField) {
     const newStore = new Store(miniCust, maxiCust, avgCook, nameOfStore);
     newStore.randomCustomersHour();
     newStore.populateRow();
+    inputField.form.reset();
 }
 
 
