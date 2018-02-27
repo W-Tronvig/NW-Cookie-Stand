@@ -96,7 +96,7 @@
                         <th>Locations</th>
                         <th>10AM</th>
                         <th>11AM</th>
-                        <th>12AM</th>
+                        <th>12PM</th>
                         <th>1PM</th>
                         <th>2PM</th>
                         <th>3PM</th>
@@ -121,16 +121,16 @@
                         <th>Pearl District</th>
                     </tr>
                 </tbody>
-            </table>    
-            <br>
+            </table>
+        </div>        
+        <div id="form">
             <form>
                 <fieldset>
-                    <legend>New Store Information</legend>
-                    <label>Store Name: <input type="text" name="nameOfStore" required></label> 
-                    <label>Minimum Customers Expected: <input type="number" name="miniCust" required></label>  
-                    <label>Maximum Customers Expected: <input type="number" name="maxiCust" required></label>  
-                    <label>Average Cookie Sales: <input type="number" name="avgCook" required> </label> 
-                    <input type="button" name="submit" value="Build New Store!" onclick="addStore(this)">
+                    <label>Store Name: <input type="text" name="nameOfStore"></label> 
+                    <label>Minimum Customers Expected: <input type="number" name="miniCust"></label>  
+                    <label>Maximum Customers Expected: <input type="number" name="maxiCust"></label>  
+                    <label>Average Cookie Sales: <input type="number" name="avgCook"> </label> 
+                    <input type="button" name="submit" value="Build New Store!" onclick="addStore(this)" id="button">
                 </fieldset>
             </form>
         </div>

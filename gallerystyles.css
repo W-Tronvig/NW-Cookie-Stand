@@ -5,9 +5,42 @@ background: url(images/oldbook.jpg) no-repeat center center fixed;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;  /*background border image code from css.tricks */
-};
+}
+h1 {
+    text-align: center;
+    font-size: 60px;
+    }
+    h2 {
+    text-align: center;
+    }
 
 img {
-    border-radius: 200px;
-    padding: 40px;
-};
+    border-radius: 100px;
+    height: 250px;
+    margin: 20px;
+}
+footer {
+    margin: 40 auto;
+    text-align: center;
+    padding: 500px;
+}
+div {
+    clear: both;
+}
+.movin{
+    width: 150px;
+    height: 500px;
+    position: relative;
+    top: 0;
+    -webkit-transition: top 5s;
+    -moz-transition: top 5s;
+    -o-transition: top 5s;
+    margin: 60px;
+}
+
+.movin:hover{
+    top: 400px;
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+     /* .moving image programming borrowed from http://jsfiddle.net/HGjQC/  and then edited by me to fit the needs of the page*/

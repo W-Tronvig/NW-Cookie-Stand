@@ -6,8 +6,59 @@ background: url(images/shark.jpg) no-repeat center center fixed;
 -o-background-size: cover;
 background-size: cover;  /*background border image code from css.tricks */
 
-};
+}
+h1 {
+text-align: center;
+font-size: 60px;
+}
+h2 {
+text-align: center;
+}
 img {
     border-radius: 200px;
     padding: 40px;
-};
+}
+footer {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.movin{
+    width: 150px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    -webkit-transition: top 5s;
+    -moz-transition: top 5s;
+    -o-transition: top 5s;
+    margin: 60px;
+}
+
+.movin:hover{
+    top: 400px;
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+}
+ /* .moving image programming borrowed from http://jsfiddle.net/HGjQC/  and then edited by me to fit the needs of the page*/
+
+ .shark{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-transition: top 5s;
+    -moz-transition: top 5s;
+    -o-transition: top 5s;
+    margin-left: 1400px;
+}
+
+.shark:hover{
+    top: 400px;
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    -o-transition: top .3s;
+}

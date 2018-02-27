@@ -123,9 +123,9 @@ th {
 }
 form {
     color: white;
-    width: 400px;   
+    width: 500px;   
     margin: 0 auto;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.637);
 }
 label {
     display: block;
@@ -139,6 +139,13 @@ label input {
     position: absolute;
     right: 0;
 }
-.required {
-    background-color: rgb(220, 128, 128);
+#form {
+    text-align: left;
+    font-size: 16px;
 }
+#button {
+    float: right;
+    background-color: rgb(71, 160, 71);
+    border-radius: 4px;
+}
+
