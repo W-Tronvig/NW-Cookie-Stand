@@ -15,7 +15,7 @@ function Store(minimumCustomers, maximumCustomers, avgCookiesSale, storeName) {
     this.avgCookiesSale = avgCookiesSale;
     this.storeName = storeName;
     this.cookiesArray = [];
-    this.randomCustomersHour = function (){
+    this.randomCustomersHour = function (){ //randomCookiesHour make function named
         const min = this.minimumCustomers;
         const max = this.maximumCustomers;
         for (let i = 0; i < timeOfDayArray.length; i++) {
@@ -86,7 +86,7 @@ pdxPioneerSquare.populateRow();
 
 // eslint-disable-next-line
 function addStore(inputField) {
-    const nameOfStore = inputField.form.elements.nameOfStore.value;
+    const nameOfStore = inputField.form.elements.nameOfStore.value; //could make form.nameOfStore for each.
     const miniCust = inputField.form.elements.miniCust.value;
     const maxiCust = inputField.form.elements.maxiCust.value;
     const avgCook = inputField.form.elements.avgCook.value;
